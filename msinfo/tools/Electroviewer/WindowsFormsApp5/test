@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            // テキストファイルの読み込み
+
+            // ファイル選択の画面を入れる
+
+            string setfile;
+
+            // ファイルの読み込み          
+            setfile = "C:/Users/yamamoto/Desktop/peaklist.txt";
+
+            StreamReader objReader = new StreamReader(setfile, false);
+            objReader.ReadLine(); // headerを捨てる
+
+            List<List<string>> input2 = new List<List<string>>();
+
+            string sLine = "";
+            while (sLine != null)
+            {
+                sLine = objReader.ReadLine();
+                List<string> input = new List<string>();
+
+                if (sLine != null)
+                {
+                    string[] temp_line = sLine.Split('\t');
+                                        
+                    input.AddRange(temp_line);
+                    input2.Add(input);
+                }
+            }
+
+
+            MessageBox.Show(input2.Count().ToString()); // 138×15
+
+            int ncol = input2[0].Count();
+            int nrow = input2.Count();
+
+            List<List<string>> input4 = new List<List<string>>();
+            for (int i = 0; i < ncol; i++)
+            {
+                List<string> input3 = new List<string>();
+                for (int j=0; j < nrow; j++)
+                {
+                    input3.Add(input2[j][i]);
+                }
+                input4.Add(input3);
+            }
+            
+            MessageBox.Show(input4.Count().ToString()); // 15×138
+            
+            MessageBox.Show(input2[0][3].ToString()); // 138×15
+            MessageBox.Show(input4[0][3].ToString()); // 15×138
+
+            // サンプル数
+            int n_sample = (ncol - 3) / 4;
+
+            MessageBox.Show(n_sample.ToString());
+
+
+        }
+    }
+}
