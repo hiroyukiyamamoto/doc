@@ -9,7 +9,7 @@
 - Ubuntuでの準備
     - sudo apt-get update
     - sudo apt-get upgrade
-    - curl -O https://repo.anaconda.com/archieve/Anaconda3-2020.11-Linux-x86_64.sh
+    - curl -O https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
     - sha256sum Anaconda3-2020.11-Linux-x86_64.sh
     - bash Anaconda3-2020.11-Linux-x86_64.sh
     - conda create --name my_env python=3
