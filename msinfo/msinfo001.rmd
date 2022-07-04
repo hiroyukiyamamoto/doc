@@ -1,0 +1,61 @@
+---
+title: "Rで質量分析インフォマティクス(1) リピドミクス"
+author: "Hiroyuki Yamamoto"
+date: "2022/7/4"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 準備
+- パッケージ : mzR、MsBackendMsp  
+- データ：DM0022. Raw LC/MS/MS data of nine algal species  
+  - http://prime.psc.riken.jp/menta.cgi/prime/drop_index
+- スペクトルライブラリ：MS-DIAL LipidBlast (Msp format)  
+
+```{r library, include=FALSE}
+library(mzR)
+library(MsBackendMsp)
+```
+
+## データの読み込み
+- mzMLファイル(DDA)の読み込み
+- データの確認
+
+```{r read_mzml}
+# mzMLファイルの読み込み
+filename <- "E:/20140421_Ida_Posi_AlgaesDatabase/Posi_Ida_Chlamydomonas_1.mzML"
+x <- openMSfile(filename)
+
+# MS1のScanNumber index
+index_MS1 <- which(header(x)$msLevel==1)
+# MS2のScanNumber index
+index_MS2 <- which(header(x)$msLevel==2)
+
+# MS2のprecursor m/z
+precursor_mz <- header(x)$precursorMZ[index_MS2]
+
+```
+
+## スペクトルライブラリの読み込み
+- mspファイルの読み込み
+
+```{r read_msp}
+
+file_msp <- "E:/MSDIAL-TandemMassSpectralAtlas-VS69-Pos.msp"
+
+#sp <- Spectra(file_msp, source = MsBackendMsp())
+
+
+# memo
+# リストのm/zとマッチング
+# MS/MSスペクトルとマッチング
+# MS1でピッキングをする
+# MS2でスペクトルマッチングをする
+# アダクトが結構厄介
+# 先にMS-DIALで確認してみる
+# MS-DIALとの比較
+
+```
