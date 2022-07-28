@@ -13,9 +13,10 @@
         - library(RISmed)
         - keyword <- '"neutral fat" OR "triglyceride"'
         - all <- EUtilsSummary(keyword,type="esearch",db="pubmed")
-        - counts <- QueryCount(all)
-        - all <- EUtilsSummary(keyword,type="esearch",db="pubmed", retmax=counts)
+        - counts <- QueryCount(all) # 件数を先に取得
+        - all <- EUtilsSummary(keyword,type="esearch",db="pubmed", retmax=counts) # 件数を指定して取得
         - pmid <- QueryId(all)
         - which(pmid=="25565485")
+   - EUtilsSummaryのretmaxは大きめに設定するとエラーになるので、具体的な件数を指定する
 
 
