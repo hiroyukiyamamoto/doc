@@ -9,12 +9,12 @@
     - Note that only 0 PubMed IDs were retrievedメッセージ
 - 雑感(RISmed)
     - 高速で簡単に取得できる
-    - library(RISmed)
-    - keyword <- '"neutral fat" OR "triglyceride"'
-    - all <- EUtilsSummary(keyword,type="esearch",db="pubmed")
-    - counts <- QueryCount(all)
-    - all <- EUtilsSummary(keyword,type="esearch",db="pubmed", retmax=counts)
-    - pmid <- QueryId(all)
-    - which(pmid=="25565485")
+        - library(RISmed)
+        - keyword <- '"neutral fat" OR "triglyceride"'
+        - all <- EUtilsSummary(keyword,type="esearch",db="pubmed")
+        - counts <- QueryCount(all)
+        - all <- EUtilsSummary(keyword,type="esearch",db="pubmed", retmax=counts)
+        - pmid <- QueryId(all)
+        - which(pmid=="25565485")
 
 
