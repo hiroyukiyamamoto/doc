@@ -3,11 +3,11 @@
 - Rパッケージの調査
     - easyPubMed 
     - RISmed
-- 雑感(easyPubMed)
+- 雑感(easyPubMed)　いまいち
     - easyPubmedのget_pubmed_ids関数は、PubmedIDを20個までしか取得できない
     - fetch_all_pubmed_ids関数で取得しようとしても、全データを取得できない(件数が多いせいか？)
     - Note that only 0 PubMed IDs were retrievedメッセージ
-- 雑感(RISmed)
+- 雑感(RISmed)　とても良い
     - 高速で簡単に取得できる
     - プログラム(例)
         - library(RISmed)
