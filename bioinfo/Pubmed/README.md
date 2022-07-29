@@ -18,5 +18,8 @@
         - pmid <- QueryId(all)
         - which(pmid=="25565485")
    - EUtilsSummaryのretmaxは大きめに設定するとエラーになるので、具体的な件数を指定する
+- メモ
+    - 要検討 fobitools
+ 
 
 
