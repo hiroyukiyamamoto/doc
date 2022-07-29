@@ -20,6 +20,7 @@
    - EUtilsSummaryのretmaxは大きめに設定するとエラーになるので、具体的な件数を指定する
 - メモ
     - 要検討 fobitools
+    - fooDB、食レポ
  
 
 
