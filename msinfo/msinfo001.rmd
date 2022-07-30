@@ -69,7 +69,7 @@ sp <- Spectra(file_msp, source = MsBackendMsp())
 msp_mz <- sp@backend@spectraData@listData$precursorMz
 ```
 
-## スペクトルライブラリの読み込み
+## スペクトルライブラリからスペクトルの抽出
 - precursor m/zでマッチング
 - マッチしたスペクトルを抽出
 
