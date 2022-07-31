@@ -9,3 +9,9 @@
     - 事前準備
       - 検討中
     - 検討中
+- (メモ) 解析用データ　
+  - https://repository.jpostdb.org/entry/JPST001257
+  - rawファイル、msfファイルがある
+  - F150909_FFPE_Nikkyo_180min_MS1_HCDIT_MS2_HCDOT_5uL_Sample01.raw
+  - F150909_FFPE_Nikkyo_180min_MS1_HCDIT_MS2_HCDOT_5uL_Sample01.msf
+  
