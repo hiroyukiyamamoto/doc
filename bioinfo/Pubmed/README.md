@@ -22,6 +22,7 @@
     - 要検討 fobitools
     - fooDB、食レポ
     - PubMedWordcloud
+    - 特定の現象で検索、特定の代謝物で検索、類似度データを生成、解析
  
 
 
