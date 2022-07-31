@@ -7,4 +7,4 @@
 - プロテオミクス(未作成)
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Proteomics
 - ペプチドミクス(未作成)
-  - (早川さんのデータ) https://repository.jpostdb.org/entry/JPST001386
+  - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Peptidomics
