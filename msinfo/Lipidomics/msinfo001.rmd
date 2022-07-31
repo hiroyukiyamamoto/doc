@@ -1,0 +1,101 @@
+---
+title: "Rで質量分析インフォマティクス リピドミクス(DDA)"
+author: "Hiroyuki Yamamoto"
+date: "2022/7/30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 準備
+- パッケージ : mzR、MsBackendMsp  
+- データ：DM0022. Raw LC/MS/MS data of nine algal species  
+  - http://prime.psc.riken.jp/menta.cgi/prime/drop_index
+- スペクトルライブラリ：MS-DIAL LipidBlast (Msp format)  
+
+```{r library, include=FALSE}
+library(mzR)
+library(MsBackendMsp)
+library(MSnbase)
+source("C:/Users/yamamoto/Documents/R/msinfo/tools/errppm.R")
+```
+
+## データの読み込み
+- mzMLファイル(DDA)の読み込み
+- precursor m/zとRTの取得
+
+```{r read_mzml}
+# mzMLファイルの読み込み
+filename <- "C:/Users/yamamoto/Documents/R/msinfo/Posi_Ida_Chlamydomonas_1.mzML"
+x <- openMSfile(filename)
+
+# precursor m/z, RT
+precursor_mz <- header(x)$precursorMZ
+rt <- header(x)$retentionTime/60
+
+```
+
+## ターゲットピーク(MS1)の設定
+- MS1の解析対象ピークの設定
+
+```{r settargetpeak}
+# ターゲットピーク情報の設定
+target_mz <- 854.57513
+eppm_mz <- 5
+target_MT <- 4.624
+dmt <- 0.2
+```
+
+## ターゲットピークのMS2スペクトルを取得
+
+```{r targetMS2}
+
+index <- which(abs(e_ppm(target_mz,precursor_mz)) < eppm_mz & abs(rt-target_MT) < dmt)
+
+mz <- peaks(x,index[1])[,1]
+int <- peaks(x,index[1])[,2]
+``` 
+
+## スペクトルライブラリの読み込み
+- mspファイルの読み込み
+
+```{r read_msp}
+
+file_msp <- "C:/Users/yamamoto/Documents/R/msinfo/MSDIAL-TandemMassSpectralAtlas-VS69-Pos.msp"
+sp <- Spectra(file_msp, source = MsBackendMsp())
+
+msp_mz <- sp@backend@spectraData@listData$precursorMz
+```
+
+## スペクトルライブラリからスペクトルの抽出
+- precursor m/zでマッチング
+- マッチしたスペクトルを抽出
+
+```{r match_precursor}
+
+# precursor m/zのマッチング
+index_msp <- which(abs(e_ppm(target_mz,msp_mz)) < eppm_mz)
+
+### m/z, intensity (スペクトルライブラリ)
+mz_msp <- sp[index_msp,]@backend@spectraData@listData$mz[[1]]
+int_msp <- sp[index_msp,]@backend@spectraData@listData$intensity[[1]]
+
+```
+
+## スペクトル比較
+- 実測のMS2スペクトルとスペクトルライブラリの比較
+
+```{r comparespectra}
+## スペクトルの比較
+
+s1 <- new("Spectrum2", mz=mz, intensity=int)
+s2 <- new("Spectrum2", mz=mz_msp, intensity=int_msp)
+compareSpectra(s1, s2, fun="dotproduct")
+
+plot(mz,int/max(int),type="h",xlim=c(min(mz,mz_msp),max(mz,mz_msp)),ylim=c(-1,1), lwd=2, xlab="m/z", ylab="")
+par(new=T)
+plot(mz_msp,-int_msp/max(int_msp),type="h",xlim=c(min(mz,mz_msp),max(mz,mz_msp)),ylim=c(-1,1), col="red",lwd=2, xlab="m/z", ylab="")
+
+```
