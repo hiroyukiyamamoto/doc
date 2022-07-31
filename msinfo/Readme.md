@@ -8,6 +8,5 @@
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Proteomics
 - ペプチドミクス(未作成)
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Peptidomics
-  
-- メモ
-  - https://github.com/RforMassSpectrometry
+- メタボロミクス(未作成)
+  - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Metabolomics
