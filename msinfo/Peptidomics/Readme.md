@@ -10,6 +10,6 @@
       - 検討中
     - 検討中
 - (メモ) 解析用データ　
-  - https://repository.jpostdb.org/entry/JPST001257
+  - https://repository.jpostdb.org/entry/JPST001386
 
   
