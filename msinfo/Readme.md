@@ -7,4 +7,4 @@
 - プロテオミクス
   - 準備中
 - ペプチドミクス
-  - (データ) https://repository.jpostdb.org/entry/JPST001386
+  - (早川さんのデータ) https://repository.jpostdb.org/entry/JPST001386
