@@ -3,6 +3,6 @@
 - XCMSを用いた質量分析データ処理
   - https://hiroyukiyamamoto.github.io/metabolomeanalysisworkshop/articles/xcms.html
 - リピドミクス　LC-MS/MS (DDA)
-  - https://hiroyukiyamamoto.github.io/doc/msinfo/Lipidomics/msinfo001.html
+  - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Lipidomics
 - プロテオミクス
   - 準備中
