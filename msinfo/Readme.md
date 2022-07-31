@@ -5,6 +5,6 @@
 - リピドミクス　LC-MS/MS (DDA)
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Lipidomics
 - プロテオミクス
-  - 準備中
+  - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Proteomics
 - ペプチドミクス
   - (早川さんのデータ) https://repository.jpostdb.org/entry/JPST001386
