@@ -6,3 +6,5 @@
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Lipidomics
 - プロテオミクス
   - 準備中
+- ペプチドミクス
+  - (データ) https://repository.jpostdb.org/entry/JPST001386
