@@ -4,7 +4,7 @@
   - https://hiroyukiyamamoto.github.io/metabolomeanalysisworkshop/articles/xcms.html
 - リピドミクス　LC-MS/MS (DDA)
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Lipidomics
-- プロテオミクス
+- プロテオミクス(未作成)
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Proteomics
-- ペプチドミクス
+- ペプチドミクス(未作成)
   - (早川さんのデータ) https://repository.jpostdb.org/entry/JPST001386
