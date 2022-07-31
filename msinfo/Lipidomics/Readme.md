@@ -1,7 +1,7 @@
 ### リピドミクス
 
 - 解析例　LC-MS/MS (DDA)
-  - https://hiroyukiyamamoto.github.io/doc/msinfo/msinfo001.html
+  - https://hiroyukiyamamoto.github.io/doc/msinfo/Lipidomics/msinfo001.html
   - 必要なライブラリ
     - mzR : .mzmlファイルの読み込み
     - MsBackendMsp : .mspファイルの読み込み
