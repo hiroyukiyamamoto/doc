@@ -17,5 +17,9 @@
       - msf : Proteome discovererの解析結果のファイル
   - https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
   - https://bioconductor.riken.jp/packages/3.0/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.pdf
-  - rTandem
+  - 以前はrTandemが使われていたが、現在はBioconductorから削除されている
+  - 現在は、ソフトウェアもしくはデータベース(Mascot, Comet, MaxQuant, MSGF+, OMSSAなど)で検索し、その結果をRで読み込んで利用するのが標準的
+  - While searches are generally performed using third-party software independently of R or can be started from R using a system call, the rTANDEM package allows one to execute such searches using the X!Tandem engine. 
+    - https://bioconductor.riken.jp/packages/3.8/workflows/vignettes/proteomics/inst/doc/proteomics.html#msms-database-search
+
   
