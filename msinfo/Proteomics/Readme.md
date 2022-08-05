@@ -21,5 +21,8 @@
   - 現在は、ソフトウェアもしくはデータベース(Mascot, Comet, MaxQuant, MSGF+, OMSSAなど)で検索し、その結果をRで読み込んで利用するのが標準的
   - While searches are generally performed using third-party software independently of R or can be started from R using a system call, the rTANDEM package allows one to execute such searches using the X!Tandem engine. 
     - https://bioconductor.riken.jp/packages/3.8/workflows/vignettes/proteomics/inst/doc/proteomics.html#msms-database-search
+  - 検討事項
+    - ソフトウェアで一通り解析し、その結果をRで読み込む
+    - MS/MSスペクトルをmgfファイルに出力して、Mascotなどのデータベースで検索する。検索結果を再度Rで読み込む 
 
   
