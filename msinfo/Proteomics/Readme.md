@@ -30,3 +30,4 @@
   - msfファイルを確認し、注目するペプチドを決めてMascotに投げる   
 - Peptide-Spectrum Matching (PSM)
   - PSMatch
+  - PSMが一番重要か？PSMについて調べる
