@@ -41,7 +41,7 @@
   - # 特定の酵素で分解してペプチドのアミノ酸配列を取得
     -library(cleaver)
     - pepseqs <- cleave(proseq, enzym="trypsin")
-  -# ペプチドのフラグメントを生成
+  - # ペプチドのフラグメントを生成
     - library(PSMatch)
     - pepseq <- pepseqs[[1]][1]
     - frag <- calculateFragments(pepseq)
