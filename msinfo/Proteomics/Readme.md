@@ -39,13 +39,13 @@
     - Obj <- GetSequences("A6XGL2")
     - proseq <- Obj$Sequence
   - # 特定の酵素で分解してペプチドのアミノ酸配列を取得
-    -library(cleaver)
+    - library(cleaver)
     - pepseqs <- cleave(proseq, enzym="trypsin")
   - # ペプチドのフラグメントを生成
     - library(PSMatch)
     - pepseq <- pepseqs[[1]][1]
     - frag <- calculateFragments(pepseq)
     - frag$mz 
-  -# 要確認
-  -# https://bioconductor.org/packages/release/bioc/vignettes/PSMatch/inst/doc/PSM.html
+  - # 要確認
+  - # https://bioconductor.org/packages/release/bioc/vignettes/PSMatch/inst/doc/PSM.html
 
