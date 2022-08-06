@@ -28,5 +28,5 @@
 - 解析用メモ
   - 特定のペプチドに着目してDDAのスペクトルを取得し、mgfファイルにしてMascotに投げる
   - msfファイルを確認し、注目するペプチドを決めてMascotに投げる   
-
-  
+- Peptide-Spectrum Matching (PSM)
+  - PSMatch
