@@ -14,6 +14,7 @@
   - rawファイル、msfファイルがある
     - F150909_FFPE_Nikkyo_180min_MS1_HCDIT_MS2_HCDOT_5uL_Sample01.raw
     - F150909_FFPE_Nikkyo_180min_MS1_HCDIT_MS2_HCDOT_5uL_Sample01.msf
+    - DDA,トリプシン処理
       - msf : Proteome discovererの解析結果のファイル
       - msfをmgfに変換してmascotに投げる
   - https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
@@ -24,6 +25,9 @@
     - https://bioconductor.riken.jp/packages/3.8/workflows/vignettes/proteomics/inst/doc/proteomics.html#msms-database-search
   - 検討事項
     - ソフトウェアで一通り解析し、その結果をRで読み込む
-    - MS/MSスペクトルをmgfファイルに出力して、Mascotなどのデータベースで検索する。検索結果を再度Rで読み込む 
+    - MS/MSスペクトルをmgfファイルに出力して、Mascotなどのデータベースで検索する。検索結果を再度Rで読み込む
+- 解析用メモ
+  - 特定のペプチドに着目してDDAのスペクトルを取得し、mgfファイルにしてMascotに投げる
+  - msfファイルを確認し、注目するペプチドを決めてMascotに投げる   
 
   
