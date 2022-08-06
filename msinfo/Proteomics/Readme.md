@@ -15,6 +15,7 @@
     - F150909_FFPE_Nikkyo_180min_MS1_HCDIT_MS2_HCDOT_5uL_Sample01.raw
     - F150909_FFPE_Nikkyo_180min_MS1_HCDIT_MS2_HCDOT_5uL_Sample01.msf
       - msf : Proteome discovererの解析結果のファイル
+      - msfをmgfに変換してmascotに投げる
   - https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
   - https://bioconductor.riken.jp/packages/3.0/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.pdf
   - 以前はrTandemが使われていたが、現在はBioconductorから削除されている
