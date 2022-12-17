@@ -10,7 +10,7 @@
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Peptidomics
 - XCMSを用いた質量分析データ処理 (DDA、DIA) 
   - http://www.bioconductor.org/packages/release/bioc/vignettes/xcms/inst/doc/xcms-lcms-ms.html
-- メタボロミクス(構造推定)
+- 構造推定
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/tools/michitarou
 - アノテーション
   - https://jorainer.github.io/MetaboAnnotationTutorials/articles/annotation-use-cases.html
