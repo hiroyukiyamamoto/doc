@@ -6,3 +6,6 @@
 
 - 検討事項
   - 内積以外のMS/MSスペクトル類似度について
+
+- 参考文献
+  - https://academic.oup.com/bioinformatics/article/35/17/3196/5288514
