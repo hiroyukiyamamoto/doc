@@ -10,9 +10,6 @@ library(MSnbase)
 #save(sp, file="C:/Users/yamamoto/Documents/R/msinfo/Network/sp_MassBank.RData")
 load(file="C:/Users/yamamoto/Documents/R/msinfo/Network/sp_MassBank.RData")
 
-# 中分子メモ
-## DDAのスペクトルとの類似度を計算してみる(中分子)
-
 # 物質名一覧
 metabolites <- sp@backend@spectraData@listData$Name # 18237物質
 
