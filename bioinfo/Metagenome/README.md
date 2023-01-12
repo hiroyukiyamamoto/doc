@@ -21,6 +21,12 @@
 - Qiime2の確認
     - conda activate qiime2-2022.2
     - qiime2 info
+- Rでの解析
+    - qiime2r
+       - https://github.com/jbisanz/qiime2R
+       - https://qiita.com/xvtyzn/items/6a008b61d852dcbaed57
+    - その他
+       - https://rstudio-pubs-static.s3.amazonaws.com/268156_d3ea37937f4f4469839ab6fa2c483842.html
 
 
 
