@@ -16,6 +16,8 @@
   - https://jorainer.github.io/MetaboAnnotationTutorials/articles/annotation-use-cases.html
 - MS/MSスペクトル類似度、スペクトルネットワーキング
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Network
+- MS/MSデコンボリューション
+　- https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Deconv
 
 
 
