@@ -1,5 +1,16 @@
 ### MS/MSデコンボリューション
 
+- 解析手法(実装予定)
+  - デコンボリューション
+    - ALS
+    - ACLS、RALS(Regularized ALS)
+    - ICA
+    - nonnegative ICA
+  - 制約条件
+    - normalize
+    - unimodal
+  - 成分数の推定
+    - singular value ratio (SVR) 
 - 参考資料
   - 論文
     - Hiroyuki Yamamoto, Keishi Hada, Hideki Yamaji, Tomohisa Katsuda, Hiromu Ohno, Hideki Fukuda,
