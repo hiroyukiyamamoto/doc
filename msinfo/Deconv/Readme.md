@@ -11,6 +11,7 @@
     - unimodal
   - 成分数の推定
     - singular value ratio (SVR) 
+    - IND, RESO
 - 参考資料
   - 論文
     - Hiroyuki Yamamoto, Keishi Hada, Hideki Yamaji, Tomohisa Katsuda, Hiromu Ohno, Hideki Fukuda,
