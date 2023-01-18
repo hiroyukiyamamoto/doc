@@ -21,6 +21,8 @@
     - ALS と ICA のスペクトル分離法への応用 Haematococcus pluvialis代謝物質のHPLC-DADデータの解析
     - 第49回自動制御連合講演会 2006 年 11 月 25 日，26 日 神戸大学
     - https://www.jstage.jst.go.jp/article/jacc/49/0/49_0_389/_article/-char/ja/
+  - 参考文献
+    - Chen, Zeng‐Ping et al. “Determination of the number of components in mixtures using a new approach incorporating chemical information.” Journal of Chemometrics 13 (1999): n. pag.
 
 
 
