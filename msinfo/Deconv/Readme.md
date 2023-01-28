@@ -1,5 +1,9 @@
 ### MS/MSデコンボリューション
 
+- osdパッケージを用いたデコンボリューション
+  - https://hiroyukiyamamoto.github.io/doc/msinfo/Deconv/deconv001.html
+  - https://cran.r-project.org/web/packages/osd/index.html
+
 - 解析手法(実装予定)
   - デコンボリューション
     - ALS
@@ -24,8 +28,6 @@
   - 参考文献
     - Chen, Zeng‐Ping et al. “Determination of the number of components in mixtures using a new approach incorporating chemical information.” Journal of Chemometrics 13 (1999): n. pag.
     - https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291099-128X%28199901/02%2913%3A1%3C15%3A%3AAID-CEM527%3E3.0.CO%3B2-I
-  - 参考データ
-    - https://cran.r-project.org/web/packages/osd/index.html
 
 
 
