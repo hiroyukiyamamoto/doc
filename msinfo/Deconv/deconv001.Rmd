@@ -1,0 +1,40 @@
+---
+title: "デコンボリューション(GC-MS)"
+output: html_document
+date: '2023-01-28'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## osdパッケージ
+
+```{r osd}
+library(osd)
+```
+
+## デコンボリューション
+
+```{r deconv, echo=TRUE}
+data(gcms1) # 71(クロマトの時間ポイント)×566(MSスペクトルのm/zポイント)
+
+# Deconvolution
+resolution <- osd(D=gcms1, k=3, res.method='ica.osd')
+```
+
+## 結果
+
+3成分としたときの結果
+
+```{r pressure, echo=TRUE}
+par(mfrow = c(3, 2)) 
+plotOSDres(resolution, type='eic',1)
+plotOSDres(resolution, type='s',1)
+plotOSDres(resolution, type='eic',2)
+plotOSDres(resolution, type='s',2)
+plotOSDres(resolution, type='eic',3)
+plotOSDres(resolution, type='s',3)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
