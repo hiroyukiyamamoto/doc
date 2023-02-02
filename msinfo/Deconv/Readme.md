@@ -5,12 +5,13 @@
   - https://cran.r-project.org/web/packages/osd/index.html
 - 解析手法(実装予定)
   - デコンボリューション
-    - ALS
-    - ACLS、RALS(Regularized ALS)
+    - [済]ALS
+    - [済]RALS(Regularized ALS)、ACLS
+    - [済]non-negative ALS
     - ICA
     - nonnegative ICA
   - 制約条件
-    - normalize
+    - [済]normalize
     - unimodal
   - 成分数の推定
     - singular value ratio (SVR) 
