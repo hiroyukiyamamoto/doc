@@ -10,6 +10,7 @@
     - [済]non-negative ALS
     - ICA
     - nonnegative ICA
+    - non-negative matrix factorization
   - 制約条件
     - [済]normalize
     - unimodal
