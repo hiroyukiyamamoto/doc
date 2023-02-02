@@ -3,6 +3,9 @@
 - osdパッケージを用いたデコンボリューション
   - https://hiroyukiyamamoto.github.io/doc/msinfo/Deconv/deconv001.html
   - https://cran.r-project.org/web/packages/osd/index.html
+- ALSパッケージ
+　- 確認中
+  - https://cran.r-project.org/web/packages/ALS/index.html 
 - 解析手法(実装予定)
   - デコンボリューション
     - [済]ALS
