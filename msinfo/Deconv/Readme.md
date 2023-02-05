@@ -6,6 +6,9 @@
 - ALSパッケージ
   - 確認中
   - https://cran.r-project.org/web/packages/ALS/index.html 
+- alsaceパッケージ
+  - 要確認
+  - http://bioconductor.jp/packages/3.11/bioc/html/alsace.html
 - 解析手法(実装予定)
   - デコンボリューション
     - [済]ALS
