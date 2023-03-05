@@ -1,0 +1,7 @@
+RGCxGC CRAN
+baseline CRAN
+NMRProcFlow Bitbucket
+PepsNMR GitHub
+
+hyperSpec, ChemoSpec, mdatools (or the baseline packages).
+
