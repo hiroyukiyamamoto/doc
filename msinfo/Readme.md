@@ -18,7 +18,7 @@
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Network
 - MS/MSデコンボリューション
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Deconv
- - ベースライン補正
+- ベースライン補正
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Baseline
 
 
