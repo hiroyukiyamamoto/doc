@@ -23,6 +23,8 @@
   - 成分数の推定
     - singular value ratio (SVR) 
     - IND, RESO
+- データ
+　　- HILIC-Pos-SWATH-25Da-20140701_08_GB004467_Swath25Da.mzML
 - 参考資料
   - 論文
     - Hiroyuki Yamamoto, Keishi Hada, Hideki Yamaji, Tomohisa Katsuda, Hiromu Ohno, Hideki Fukuda,
