@@ -1,30 +1,5 @@
 ### MS/MSデコンボリューション
-
-- osdパッケージを用いたデコンボリューション
-  - https://hiroyukiyamamoto.github.io/doc/msinfo/Deconv/deconv001.html
-  - https://cran.r-project.org/web/packages/osd/index.html
-- ALSパッケージ
-  - 確認中
-  - https://cran.r-project.org/web/packages/ALS/index.html 
-- alsaceパッケージ
-  - 要確認
-  - http://bioconductor.jp/packages/3.11/bioc/html/alsace.html
-- 解析手法(実装予定)
-  - デコンボリューション
-    - [済]ALS
-    - [済]RALS(Regularized ALS)、ACLS
-    - [済]non-negative ALS
-    - ICA
-    - nonnegative ICA
-    - non-negative matrix factorization
-  - 制約条件
-    - [済]normalize
-    - unimodal
-  - 成分数の推定
-    - singular value ratio (SVR) 
-    - IND, RESO
-  - データ
-    - HILIC-Pos-SWATH-25Da-20140701_08_GB004467_Swath25Da.mzML
+- Bioconductorパッケージ開発の計画中です
 - 参考資料
   - 論文
     - Hiroyuki Yamamoto, Keishi Hada, Hideki Yamaji, Tomohisa Katsuda, Hiromu Ohno, Hideki Fukuda,
@@ -34,8 +9,34 @@
     - ALS と ICA のスペクトル分離法への応用 Haematococcus pluvialis代謝物質のHPLC-DADデータの解析
     - 第49回自動制御連合講演会 2006 年 11 月 25 日，26 日 神戸大学
     - https://www.jstage.jst.go.jp/article/jacc/49/0/49_0_389/_article/-char/ja/
+    - 独立成分分析を用いたMS/MSデコンボリューション
+    - 日本プロテオーム学会2023年大会 21st JHUPO(2023.7)
 
-
-
+- メモ
+  - osdパッケージを用いたデコンボリューション
+    - https://hiroyukiyamamoto.github.io/doc/msinfo/Deconv/deconv001.html
+    - https://cran.r-project.org/web/packages/osd/index.html
+  - ALSパッケージ
+    - 確認中
+    - https://cran.r-project.org/web/packages/ALS/index.html 
+  - alsaceパッケージ
+    - 要確認
+    - http://bioconductor.jp/packages/3.11/bioc/html/alsace.html
+  - 解析手法(実装予定)
+    - デコンボリューション
+      - [済]ALS
+      - [済]RALS(Regularized ALS)、ACLS
+      - [済]non-negative ALS
+      - ICA
+      - nonnegative ICA
+      - non-negative matrix factorization
+    - 制約条件
+      - [済]normalize
+      - unimodal
+    - 成分数の推定
+      - singular value ratio (SVR) 
+      - IND, RESO
+    - データ
+      - HILIC-Pos-SWATH-25Da-20140701_08_GB004467_Swath25Da.mzML
 
 
