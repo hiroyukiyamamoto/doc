@@ -1,0 +1,72 @@
+---
+title: "PCA Loadings ダッシュボード"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(DT)
+library(ggplot2)
+library(loadings)
+```
+
+Row {data-height=150}
+-----------------------------------------------------------------------
+
+### 主成分ローディングの説明
+
+- **使用法**: `pca_loading(pca)`
+  
+**戻り値**: 戻り値は、次の要素を含むリストオブジェクトです:
+- **R**: PC ローディング。
+- **p.value**: PC ローディングのp値
+
+Row
+-----------------------------------------------------------------------
+
+### 主成分スコア
+
+```{r}
+# サンプルデータをロード
+data(fasting)
+X <- fasting$X
+pca_result <- prcomp(X, scale=TRUE)
+
+# 色分け用のベクトル
+color_factor <- as.factor(max.col(fasting$Y))
+levels(color_factor) <- c("normal", "fasting")
+
+# 主成分スコアの散布図
+ggplot(data.frame(pca_result$x), aes(x = PC1, y = PC2, color = color_factor)) +
+  geom_point(size = 4) +
+  scale_color_manual(values = c("blue", "red"), labels = c("normal", "fasting")) +
+  theme_minimal()
+```
+
+### 主成分ローディング
+
+```{r}
+# 主成分ローディングを計算
+loading_result <- pca_loading(pca_result)
+
+# PC1とPC2のローディングを順番に整理して表示
+df <- data.frame(
+  PC1_R = round(loading_result$loading$R[, "PC1"], 4), 
+  PC1_p.value = round(loading_result$loading$p.value[, "PC1"], 4),
+  PC2_R = round(loading_result$loading$R[, "PC2"], 4), 
+  PC2_p.value = round(loading_result$loading$p.value[, "PC2"], 4)
+)
+
+# PC1とPC2のローディングを順番に整理して表示
+datatable(df)
+```
+
+Row {data-height=70}
+-----------------------------------------------------------------------
+
+### 参考文献
+
+Yamamoto H. et al. (2014). "Statistical hypothesis testing of factor loading in principal component analysis and its application to metabolite set enrichment analysis". BMC Bioinformatics, 15(1):51.
