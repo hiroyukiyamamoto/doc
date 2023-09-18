@@ -24,6 +24,7 @@
 #### データ解析
 - 主成分負荷量
   - https://hiroyukiyamamoto.github.io/doc/msinfo/loadings/pca_loading.html
+  - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/loadings
 
 
 
