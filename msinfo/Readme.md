@@ -1,6 +1,6 @@
 ### Rで質量分析インフォマティクス
 
-# データ処理
+#### データ処理
 - XCMSを用いた質量分析データ処理 (MS1)
   - https://hiroyukiyamamoto.github.io/metabolomeanalysisworkshop/articles/xcms.html
 - リピドミクス　LC-MS/MS (DDA)
@@ -21,7 +21,7 @@
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Deconv
 - ベースライン補正
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Baseline  
-# データ解析
+#### データ解析
 - 主成分負荷量
   - https://hiroyukiyamamoto.github.io/doc/msinfo/loadings/pca_loading.html
 
