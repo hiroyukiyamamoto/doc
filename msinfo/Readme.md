@@ -1,10 +1,11 @@
 ### Rで質量分析インフォマティクス
 
 #### データ処理
-- XCMSを用いた質量分析データ処理 (MS1)
+- FAAH遺伝子欠損マウスの脊椎のメタボロームデータ(MS1)
   - https://hiroyukiyamamoto.github.io/metabolomeanalysisworkshop/articles/xcms.html
-- リピドミクス　LC-MS/MS (DDA)
+- 9種類の藻類のリピドームデータ(DDA)
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Lipidomics
+#### 準備中
 - プロテオミクス
   - https://github.com/hiroyukiyamamoto/doc/tree/main/msinfo/Proteomics
 - ペプチドミクス
